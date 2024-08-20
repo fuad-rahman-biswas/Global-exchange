@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Amount Field -->
+    <EditText
+        android:id="@+id/amountField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter amount"
+        android:textSize="20sp"
+        android:inputType="numberDecimal"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="25dp"/>
+
+    <!-- From Currency Label -->
+    <TextView
+        android:id="@+id/fromLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From"
+        android:textSize="18sp"
+        android:textColor="@color/light_gray"
+        android:layout_below="@id/amountField"
+        android:layout_marginBottom="8dp" />
+
+    <!-- From Currency Spinner -->
+    <Spinner
+        android:id="@+id/fromCurrencyBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fromLabel"
+        android:layout_marginBottom="16dp" />
+
+    <!-- To Currency Label -->
+    <TextView
+        android:id="@+id/toLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To"
+        android:textSize="18sp"
+        android:textColor="@color/light_gray"
+        android:layout_below="@id/fromCurrencyBox"
+        android:layout_marginBottom="8dp" />
+
+    <!-- To Currency Spinner -->
+    <Spinner
+        android:id="@+id/toCurrencyBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toLabel"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Convert Button -->
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:text="Convert"
+        android:layout_below="@id/toCurrencyBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="25dp"/>
+
+    <!-- Result Label -->
+    <TextView
+        android:id="@+id/resultLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result will appear here"
+        android:textSize="25dp"
+        android:textColor="@color/primary_color"
+        android:layout_below="@id/convertButton"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

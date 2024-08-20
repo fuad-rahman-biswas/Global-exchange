@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- res/values/colors.xml -->
+        <!-- Define the light gray color -->
+        <color name="light_gray">#D3D3D3</color> <!-- Light gray color -->
+        <!-- Define the primary color -->
+        <color name="primary_color">#FF5722</color> <!-- Replace with your preferred color -->
+
+</resources>
